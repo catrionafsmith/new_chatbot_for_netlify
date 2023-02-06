@@ -37,6 +37,11 @@ body {
   .btn {
     margin: 0.1rem;
   }
+
+  .terminal {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+  }
   
   /*for volunteer*/
   #selection_card {    
