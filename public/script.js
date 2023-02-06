@@ -29,7 +29,7 @@ $("#terminal").terminal(async function (command, terminal) {
     } catch (err) { console.error(`Error: ${err}`) }
 },
     {
-        greetings: 'GPT-3 Chatbot v0.1',
+        greetings: 'Careers Chatbot v0.1',
         name: 'gpt3_demo',
         height: 400,
         width: 800,
