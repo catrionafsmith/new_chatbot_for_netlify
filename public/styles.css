@@ -1,4 +1,11 @@
 /* CSS for fonts and padding. N.B. Also need google font link in the head of each page to ensure that the correct font is used */
+.terminal {
+  --color: rgba(0, 200, 0, 0.99);
+  --animation: terminal-glow;
+  --glow: 1;
+  --size: 1.5;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
   }
