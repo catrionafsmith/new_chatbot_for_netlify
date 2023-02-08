@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Spectral&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>LearnCodeEmpower Volunteer Page</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column h-100">
+    
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top"> <!--delete the bg-black here-->
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="img\girl_2.png" class="navbar-img" alt="girl">
+                  LearnCodeEmpower
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="learn.html">Learn</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="volunteer.html">Volunteer</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="chatbot.html">Chatbot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <!-- Begin selection of volunteer -->
+        <div class="container">
+          <!-- <div class="row justify-content-center" >
+            <div class="col-lg-8"> @ deprciated-->
+              <h1 class="mt-5">Volunteer</h1>
+              <div class="row row-cols-1 row-cols-md-2 g-4 learnCols">
+                  <div>
+                    <img src="img/hands-up.png" class="img-fluid icon_img" alt="Hands-up icons created by Darius Dan"> 
+                  </div>
+                <div>
+                  <p class="lead">Volunteer Your Way into Tech: Opportunities for Women!</p>
+                  <p>Are you looking for hands-on experience in the tech industry?  </p> 
+                  <p>We offer volunteer opportunities specifically for women seeking to break into the field. From mentoring programs to tech events and workshops, you'll have the chance to network with industry professionals and build your technical skills. Not only will you gain valuable experience, but you'll also make a positive impact in your community. </p>
+                  <p>Discover the many ways you can get involved and kickstart your tech career today!    </p>
+                </div>
+              </div>
+              
+              <div class="" id="selection_card">
+                <!-- <div class="card-body" > @ deprciated -->
+                  <!-- ORIGINAL VOLUNTEER PAGE LAYOUT (TO START THE SELECTION HERE) -->
+                  <!-- <h1 class="card-title mt-5">Volunteer</h1>
+                  <div>
+                  <img src="img/partnership.png" class="img-fluid icon_img" alt='Coder icons created by Darius Dan - Flaticon'>
+                  </div>
+                  <div>
+                  <p class="card-text lead" id="selection_card_subtitle">
+                    Volunteer Your Way into Tech: Opportunities for Women! </p>
+                  <p>Are you looking for hands-on experience in the tech industry? Our website offers a curated list of volunteer opportunities specifically for women seeking to break into the field. From mentoring programs to tech events and workshops, you'll have the chance to network with industry professionals and build your technical skills. Not only will you gain valuable experience, but you'll also make a positive impact in your community. Discover the many ways you can get involved and kickstart your tech career today! </p> 
+                  </div> -->
+                    <!--start the selection here-->
+                    
+                    <h5 class="card-title mt-5">Start Here...</h5>
+                  
+                  <form class="row g-3 needs-validation" novalidate>
+                    <!-- Select your level of programming -->
+                    <div class="mb-3">
+                      <label for="exampleSelect" class="form-label">Select your level of programming</label>
+                      <select class="form-select" id="exampleSelect">
+                        <option value="1"selected="">Beginner</option>
+                        <option value="2">Intermediate</option>
+                        <option value="3">Advanced</option>                  
+                      </select>
+                    </div>
+                    <!-- Select your skills -->
+                    <div class="mb-3">
+                      <label for="exampleSelect" class="form-label">Select your skills</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="web" id="flexCheckDefault" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Web programming (HTML, CSS, JavaScript)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="software" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Software Engineer (Python, Java, C#)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ai" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          AI and Machine learning
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="others" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Others
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Select type of volunteer you're interest in -->
+                    <div class="mb-3">
+                      <label for="exampleSelect" class="form-label">Select the type of volunteer you are interest in</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="project" checked>
+                        <label class="form-check-label" for="project">
+                          Project
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="tutor">
+                        <label class="form-check-label" for="tutor">
+                          Tutoring
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Agree terms and condition -->
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback" style="display: none;">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Submit -->
+                    <div class="col-12">              
+                      <input class="btn btn-secondary" type="submit" id="submit-btn" value="Submit"/>
+                    </div>  
+                  </form> 
+
+
+                  <!--end selection-->
+                  
+                <!-- </div>
+              </div>
+            </div> @ deprciated-->
+          </div>
+          
+
+          <article class="entry-wraper mb-50">
+            <div class="excerpt mb-30">
+            
+          </div>
+          </article>       
+          </div>
+          <!-- End selection of volunteer --> 
+
+
+        <!-- Begin Result of volunteer -->
+        <div class="container" id="result_container"> 
+          
+          <!--this div is for displaying projects-->         
+          <div class="content" id="content" style="display:none;">
+            <div id="result_id_div">
+              <h2 class="card-title mt-5" id="result_title" >Start Your Project</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 card_group" id="card_group">              
+               <!--card 1-->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img\project_geo.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Free UK Genealogy project</h5>
+                    <p class="card-text">Do you have Ruby on Rails, MongoDB, MySQL or HTML experience? You could join our team of volunteer software developers who are working on a number of projects, including development of the FreeREG and FreeCEN websites, and online transcription tools.</p>
+                    <a href="https://www.freeukgenealogy.org.uk/about/volunteer/tech-volunteering-opportunities/" class="btn btn-primary">Join now</a>
+                  </div>                 
+                </div>
+              </div>
+
+               <!--card 2-->
+               <div class="col">
+                <div class="card h-100">
+                  <img src="img\project_sta.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Scottish Tech Army</h5>
+                    <p class="card-text">We are the catalyst for a step change in the application of technology for public good in Scotland.</p>
+                    <a href="https://www.scottishtecharmy.org/" class="btn btn-primary">Join now</a>
+                  </div>                  
+                </div>
+              </div>
+
+               <!--card 3-->
+               <div class="col">
+                <div class="card h-100">
+                  <img src="img\project_tech_for_good.jpg" class="card-img-top" alt="..." >
+                  <div class="card-body">
+                    <h5 class="card-title">Tech for Good</h5>
+                    <p class="card-text">You and your organisation have the power to have real social impact. We design and code life-saving and life-changing software, so that you can change the world.</p>
+                    <a href="https://www.techforgood.net/" class="btn btn-primary">Join now</a>
+                  </div>                  
+                </div>
+              </div>
+
+            </div> <!--card group-->
+          </div>
+          <!-- end this div is for displaying projects-->
+
+
+          <!-- end this div is for displaying tutoring-->
+          <div class="content" id="content2" style="display:none;">
+            <!--header-->
+            <div id="result_id_div">
+              <h2 class="card-title mt-5" id="result_title" >Start Your Tutoring</h2>
+            </div>
+            <!--card group-->
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="card_group">              
+              
+              <!--card 1-->
+              <div class="col">
+               <div class="card h-100">
+                 <img src="img\tutor_codeclub.jpg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Code Camp for Kids</h5>
+                   <p class="card-text">Join our local coding camp volunteer project and make a positive impact on the community by helping young students learn the fundamentals of coding. Share your knowledge and inspire the next generation of tech leaders.</p>
+                   <a href="https://codeclub.org/en/what-is-a-code-club" class="btn btn-primary">Go somewhere</a>
+                 </div>                 
+               </div>
+             </div>
+
+             <!--card 2-->
+             <div class="col">
+              <div class="card h-100">
+                <img src="img\tutor_girlCodeCamp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Code Camp for Girls</h5>
+                  <p class="card-text">Join our local coding camp volunteer project and make a positive impact on the community by helping young students learn the fundamentals of coding. Share your knowledge and inspire the next generation of tech leaders.</p>
+                  <a href="https://www.eastbaytimes.com/2017/08/07/teaching-black-girls-to-code-oakland-summer-camp-prepares-youth-for-stem-careers/" class="btn btn-primary">Go somewhere</a>
+                </div>                 
+              </div>
+            </div>
+
+            <!--card 3-->
+            <div class="col">
+              <div class="card h-100">
+                <img src="img\tutor_mentoring.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Technology Mentoring Scheme</h5>
+                  <p class="card-text">Join our local coding camp volunteer project and make a positive impact on the community by helping young students learn the fundamentals of coding. Share your knowledge and inspire the next generation of tech leaders.</p>
+                  <a href="https://www.codementor.io/" class="btn btn-primary">Go somewhere</a>
+                </div>                 
+              </div>
+            </div>
+            <!--end of card 3-->
+            </div>
+            <!--end of card group-->
+
+          </div>          
+          <!-- end this div is for displaying tutoring-->
+        </div>
+        <!-- End Result of volunteer -->
+
+      
+
+
+    </main>
+    
+    <footer class="footer mt-auto py-3" >
+        <div class="container">
+        <span class="text-muted">Created by Team Lime © 2023.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
