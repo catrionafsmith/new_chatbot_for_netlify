@@ -1,151 +1,205 @@
 /* CSS for fonts and padding. N.B. Also need google font link in the head of each page to ensure that the correct font is used */
+
+/* CSS for terminal */
 .terminal {
-  --color: rgba(0, 200, 0, 0.99);
+  --color: #AAE3E2;
   --animation: terminal-glow;
-  --glow: 1;
+  --glow: 0.1;
   --size: 1.5;
+
+}
+/* CSS for fonts and padding. N.B. Also need google font link in the head of each page to ensure that the correct font is used */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #EAFDFC;
+}
+/* for navbar, move it here just for better adjust colour palette */
+.navbar {
+  background-color: #62B6B7;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1 {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  main > .container {
-      padding: 60px 15px 0;
-    }
-  
-  /* code for image at the top of cards (this is .card-img-top1, as otherwise the changes to the .card-img-top beneath also apply to this page) */
-  .card-img-top1 {
-    height: 45px; /* adjust this value as needed */
-  }
-  
-  /* Hover effect for Learn cards - do we want to keep? */
-  .learnCard {
-    transition: 0.3s;
-  }
-  .learnCard:hover {
-      transform: scale(1.1);
-    }
-  
-  /* For diff colour card headers */
-  .CSS {
-    background-color: antiquewhite;
-  }
-  
-    /* For chatbot */
-  .chatbot {
-    width: 10rem;
-  }
-  
-  .btn {
-    margin: 0.1rem;
+.footer {
+  background-color: rgb(98, 182, 183, 0.2);
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+main > .container {
+    padding: 60px 15px 0;
   }
 
-  .terminal {
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
+.btn-primary {
+  margin: 0.1rem;
+  background-color: #6096B4;
+  border-color: #6096B4;
+
+};
+
+/* I'm trying to change the colour of the button when you hover over it - it won't work and I don't know why */
+ 
+.btn:hover {
+    background-color: #A0C3D2 !important;
+    border-color: #A0C3D2 !important;
+}
+
+
+
+/* Styling for icons on pages */
+.icon_img {
+  max-width: 15rem;
+  
+}
+
+/* Hover effect for Learn cards - do we want to keep? */
+.learnCard {
+  transition: 0.3s;
+}
+.learnCard:hover {
+    transform: scale(1.1);
+  }
+
+/* For diff colour card headers */
+.HTML {
+  background-color: #FDEBED;
+}
+
+.CSS {
+  background-color: antiquewhite;
+}
+
+.JavaScript {
+  background-color: #FFCEFE;
+}
+
+.Python {
+  background-color: #D9ACF5;
+}
+
+.Java {
+  background-color: #AAE3E2;
+}
+
+.Basics {
+  background-color: #FFF6BD;
+}
+
+  /* For chatbot */
+.chatbot {
+  width: 10rem;
+}
+
+
+
+/*for volunteer*/
+#selection_card {    
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#selection_card_subtitle {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+#card_group {
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+#result_id_div {    
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+#result_title {
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  border-bottom: 5px solid #000;
+  display: inline-block;    
+}
+
+.card-img-top {
+  height: 260px; /* adjust this value as needed */
+}
+
+/* for navbar */
+
+
+.navbar-img {
+  height: 22px;
+}
+
+/*for contact us*/
+#contact_us_container {
+  padding-bottom: 50px;
+}
+
+#div-contact {
+  height:100%; 
+  width:100%;
+}
+
+#img-contact {
+  height:100%; 
+  width:100%;
+  object-fit:cover;
+}
+
+/* Code for dropdowns(?) - is it all needed? */
+.dropdown-menu {
+    margin: 4rem auto;
   }
   
-  /*for volunteer*/
-  #selection_card {    
-    box-shadow: none;
-    background-color: transparent;
-    border-color: transparent;
+  .dropdown-item-danger {
+    color: var(--bs-red);
+  }
+  .dropdown-item-danger:hover,
+  .dropdown-item-danger:focus {
+    color: #fff;
+    background-color: var(--bs-red);
+  }
+  .dropdown-item-danger.active {
+    background-color: var(--bs-red);
   }
   
-  #selection_card_subtitle {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    text-align: justify;
+  /* .btn-hover-light {
+    background-color: var(--bs-white);
   }
-  
-  #card_group {
-    padding-top: 10px;
-    padding-bottom: 100px;
-  }
-  
-  #result_id_div {    
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-  
-  #result_title {
-    text-align:center;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 5rem;
-    border-bottom: 5px solid #000;
-    display: inline-block;    
-  }
-  
-  .card-img-top {
-    height: 260px; /* adjust this value as needed */
-  }
-  
-  /* for navbar */
-  .navbar {
-    background-color: #AAE3E2;
-  }
-  
-  .navbar-img {
-    height: 22px;
-  }
-  
-  /*for contact us*/
-  #contact_us_container {
-    padding-bottom: 150px;
-  }
-  
-  /* Code for dropdowns(?) - is it all needed? */
-  .dropdown-menu {
-      margin: 4rem auto;
-    }
+  .btn-hover-light:hover,
+  .btn-hover-light:focus {
+    color: var(--bs-white);
+    background-color: var(--bs-white);
+  } */
     
-    .dropdown-item-danger {
-      color: var(--bs-red);
-    }
-    .dropdown-item-danger:hover,
-    .dropdown-item-danger:focus {
-      color: #fff;
-      background-color: var(--bs-red);
-    }
-    .dropdown-item-danger.active {
-      background-color: var(--bs-red);
-    }
-    
-    .btn-hover-light {
-      background-color: var(--bs-white);
-    }
-    .btn-hover-light:hover,
-    .btn-hover-light:focus {
-      color: var(--bs-blue);
-      background-color: var(--bs-light);
-    }
-      
-    .form-control-dark {
-      background-color: rgba(255, 255, 255, .05);
-      border-color: rgba(255, 255, 255, .15);
-    }
-    
-    .w-220px {
-      width: 220px;
-    }
-    
-    .w-280px {
-      width: 280px;
-    }
-    
-    .w-340px {
-      width: 340px;
-    }
-    
-    .w-600px {
-      width: 600px;
-    }
+  .form-control-dark {
+    background-color: rgba(255, 255, 255, .05);
+    border-color: rgba(255, 255, 255, .15);
+  }
+  
+  .w-220px {
+    width: 220px;
+  }
+  
+  .w-280px {
+    width: 280px;
+  }
+  
+  .w-340px {
+    width: 340px;
+  }
+  
+  .w-600px {
+    width: 600px;
+  }
+
+  

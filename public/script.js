@@ -1,7 +1,7 @@
 
 $("#terminal").terminal(async function (command, terminal) {
     try {
-        const prompt = `you are a helpful, knowledge sharing chatbot. I say: ${command}. You reply:`
+        const prompt = `you are a helpful, knowledge sharing careers chatbot. I say: ${command}. You reply:`
         const keyresp = await fetch('/.netlify/functions/hello')
         .then(response => response.json()
         )
@@ -20,7 +20,7 @@ $("#terminal").terminal(async function (command, terminal) {
         ).then((response) => {
             if (response.ok) {
                 response.json().then((json) => {
-                    terminal.echo(json.choices[0].text.trim());
+                    terminal.echo(json.choices[0].text.trim(), {keepWords: true});
                 });
             }
         });
@@ -29,10 +29,10 @@ $("#terminal").terminal(async function (command, terminal) {
     } catch (err) { console.error(`Error: ${err}`) }
 },
     {
-        greetings: 'Careers Chatbot v0.1: Type your question at the arrow, then press enter. Wait for up to 5 seconds for your reply!',
+        greetings: 'Careers Chatbot v1: Type your question at the arrow, then press enter. Wait 5-10 seconds for your personalised reply!',
         name: 'gpt3_demo',
         height: 400,
         width: 800,
-        prompt: '> '
+        prompt: '> ',
     });
 
