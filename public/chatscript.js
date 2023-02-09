@@ -29,9 +29,9 @@ $("#terminal").terminal(async function (command, terminal) {
     } catch (err) { console.error(`Error: ${err}`) }
 },
     {
-        greetings: 'Careers Chatbot v1: Type your question at the arrow, then press enter. Wait 5-10 seconds for your personalised reply!',
+        greetings: 'Careers Chatbot v1:',
         name: 'gpt3_demo',
         height: 400,
-        width: 800,
+        // width: 800,
         prompt: '> ',
     });
