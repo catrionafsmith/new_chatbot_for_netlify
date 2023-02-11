@@ -71,15 +71,15 @@ main > .container {
     padding: 60px 15px 0;
   }
 
-.btn-primary {
+/* .btn-primary {
   margin: 0.1rem;
   background-color: #6096B4;
   border-color: #6096B4;
 
-};
+}; */
 
 /* primary button hover, please make sure this two part both exist */
-.btn-primary.active:hover{
+/* .btn-primary.active:hover{
   color: #A0C3D2;
   background-color: #A0C3D2;
   border-color: #A0C3D2;
@@ -88,7 +88,7 @@ main > .container {
     background-color: #A0C3D2 !important;
     border-color: #A0C3D2 !important;
 }
-
+ */
 
 
 /* Styling for icons on pages */
